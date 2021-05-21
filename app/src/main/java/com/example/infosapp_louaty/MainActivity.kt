@@ -35,9 +35,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
+        //init cache
         Paper.init(this)
         mService = Common.infosService
+        //init swipe
         swipe_to_refresh.setOnRefreshListener {
             loadWebSiteSource(true)
         }
@@ -53,6 +54,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    //cache
     private fun loadWebSiteSource(isRefresh: Boolean) {
         if(!isRefresh)
         {
