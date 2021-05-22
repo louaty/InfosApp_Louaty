@@ -11,9 +11,7 @@ import com.example.infosapp_louaty.Adapter.ViewHolder.ListeSourceAdapter
 import com.example.infosapp_louaty.Common.Common
 import com.example.infosapp_louaty.Interface.InfosService
 import com.example.infosapp_louaty.Model.WebSite
-import com.example.infosapp_louaty.R
-//import com.example.appnews_louaty.R.id.searchView
-//import com.example.appnews_louaty.Common.Common
+//import com.example.infosapp_louaty.R.id.searchView
 import com.google.gson.Gson
 import dmax.dialog.SpotsDialog
 import io.paperdb.Paper
@@ -54,7 +52,6 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    //cache
     private fun loadWebSiteSource(isRefresh: Boolean) {
         if(!isRefresh)
         {

@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.infosapp_louaty.Interface.ItemClickListener
-//import com.example.infosapp_louaty.ListeInfos
+import com.example.infosapp_louaty.ListeInfos
 
 import com.example.infosapp_louaty.Model.WebSite
 import com.example.infosapp_louaty.R
@@ -36,11 +36,11 @@ class ListeSourceAdapter(private val context:Context, private val webSite: WebSi
 
         holder.setItemClickListener(object : ItemClickListener {
             override fun onClick(view: View, position: Int) {
-              /*  val intent = Intent(context, ListeInfos::class.java)
+                val intent = Intent(context, ListeInfos::class.java)
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                 intent.putExtra("source", webSite.sources!![position].id)
 
-                context.startActivity(intent)*/
+                context.startActivity(intent)
 
 
             }
